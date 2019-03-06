@@ -1,0 +1,23 @@
+{
+  "name": "battle-at-sea",
+  "version": "1.0.0",
+  "private": true,
+  "author": "LG",
+  "license": "Apache-2.0",
+  "description": "Battle at Sea is a battleship-based game for two players on 10 x 10 grids with five-ship fleet each. Alexa acts as a mediator.",
+  "keywords": [
+    "alexa",
+    "skill",
+    "battle-at-sea",
+    "battleship",
+    "two-player",
+	  "game"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.0.0"
+  }
+}

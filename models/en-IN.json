@@ -1,0 +1,144 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "battle at sea",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BattleAtSea",
+                    "slots": [],
+                    "samples": [
+                        "begin battle at sea",
+                        "continue battle at sea",
+                        "resume battle at sea",
+                        "load battle at sea",
+                        "launch battle at sea",
+                        "start battle at sea",
+                        "open battle at sea",
+                        "play battle at sea"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "please say it again",
+                        "please say that again",
+                        "please repeat",
+                        "didn't understand",
+                        "didn't understand you",
+                        "I didn't understand",
+                        "no idea",
+                        "no idea what you said",
+                        "didn't get that",
+                        "I didn't get that",
+                        "what's that",
+                        "what was that",
+                        "what's that again",
+                        "what was that again",
+                        "what did you say"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CoordinateDirectionAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "rowCoordinate",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "columnCoordinate",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "direction",
+                            "type": "DIRECTION_SLOT"
+                        }
+                    ],
+                    "samples": [
+                        "{rowCoordinate} {columnCoordinate} {direction}",
+                        "{rowCoordinate} and {columnCoordinate} and {direction}",
+                        "{rowCoordinate} {columnCoordinate} and {direction}",
+                        "{rowCoordinate} and {columnCoordinate} {direction}",
+                        "it is {rowCoordinate} {columnCoordinate} {direction}",
+                        "they are {rowCoordinate} {columnCoordinate} {direction}"
+                    ]
+                },
+                {
+                    "name": "CoordinateAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "rowCoordinate",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "columnCoordinate",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "they're {rowCoordinate} and {columnCoordinate}",
+                        "they are {rowCoordinate} and {columnCoordinate}",
+                        "It is {rowCoordinate} and {columnCoordinate}",
+                        "It's {rowCoordinate} and {columnCoordinate}",
+                        "{rowCoordinate} and {columnCoordinate}",
+                        "{rowCoordinate} {columnCoordinate}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DIRECTION_SLOT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
